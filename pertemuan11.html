@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
 
-    <title>Azhar Gunawan menu</title>
+    <title>Pertemuan 11 - my work</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -41,11 +41,13 @@
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
-                <li><a href="#section1">About Me</a></li>
-                <li><a href="#section2">What I’m good at</a></li>
-                <li><a href="#section3">My Work</a></li>
-                <!-- <li><a href="#section4">Contact Me</a></li> -->
+                <li><a href="#section1">Tugas Pertemuan 11</a></li>
               </ul>
+              <div class="social-icons">
+                <li>
+                  <a href="index.html" id="backward">kembali</a>
+                </li>
+              </div>
             </nav>
             <div class="social-network">
               <ul class="soial-icons">
@@ -58,7 +60,7 @@
                   <a href="https://twitter.com/okami_666"><i class="fa fa-twitter"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/azhargunawan00"><i class="fa fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/azhargunawan00/"><i class="fa fa-instagram"></i></a>
                 </li>
               </ul>
             </div>
@@ -72,26 +74,63 @@
       <section class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
-            <h2>About Me</h2>
+            <h2>Tugas Pertemuan 11</h2>
             <div class="line-dec"></div>
             <span
-              >Hai saya Muhamad azhar gunawan, saya adalah mahasiswa dari universitas Bina sarana informatika.
-              sistem informasi dan musik merupakan bagian dari hidup saya, dan juga merupakan salah satu kelebihan saya.
-              selain menyukai dan tekun mempelajarinya, sistem informasi dan musik sudah menjadi hobi yang menyenangkan bagi saya.</span
+              >Protokol Jaringan Komputer.</span
             >
           </div>
-          <div class="left-image-post">
             <div class="row">
-              <div class="col-md-6">
-                <div class="left-image">
-                  <img src="assets/images/left-image.png" alt="" />
-                </div>
+              <div class="col-md-5">
               </div>
-              <div class="col-md-6">
+              <div class="col-md-7">
                 <div class="right-text">
-                  <h4>Sistem Informasi</h4>
+                  <h4>
+                    1.	Jelaskan fungsi-fungsi dari protokol di bawah ini:
+                    </h4>
                   <p>
-                    Sistem Informasi adalah kombinasi dari teknologi informasi dan aktivitas orang yang menggunakan teknologi itu untuk mendukung operasi dan manajemen. Dalam arti yang sangat luas, istilah sistem informasi yang sering digunakan merujuk kepada interaksi antara orang, proses algoritmik, data, dan teknologi.
+                    a.	ICMP
+                    ICMP merupakan singkatan dari Internet Control Message Protocol. ICMP merupakan salah satu dari kelompok internet protokol yang terhubung dalam jaringan internet yang memiliki banyak peran penting. Fungsi ICMP sebagai <br>
+                    protokol jaringan adalah berfungsi sebagai lalu lintas informasi untuk memberitahu pesan-pesan error, atau error handling message.<br>
+
+                    Berbeda dengan TCP atau UDP yang tidak digunakan secara langsung dalam jaringan komputer. Kecuali penggunaan ﬁtur ping untuk menentukan apakah komputer tujuan dapat dijangkau dan berapa lama paket yang dikirimkan dibalas oleh komputer tujuan.<br>
+
+                    ICMP juga digunakan untuk memberikan pesan error jika suatu layanan jika layanan yang diminta pengguna tidak tersedia, atau jika komputer tidak bisa dihubungi.<br><br>
+
+                    Berikut merupakan beberapa fungsi dari ICMP sebagai berikut:<br>
+                    ➔	Error Handling / memberitahu bahwa jaringan sedang mengalami kendala atau error.<br>
+                    Dengan adanya ICMP ini maka setiap terjadi error dalam jaringan, maka disini ICMP akan menghandle error dalam jaringan komputer tersebut.<br><br>
+                    
+                    ➔	Mendeteksi error pada jaringan seperti lost connection, kemacetan dalam transmisi data dalam jaringan, dsb.<br>
+                    Tugas dalam mendeteksi dan mengirimkan notiﬁkasi akan terjadinya error juga merupakan tugas dan fungsi utama dari ICMP ini. ICMP merupakan protokol yang memiliki peran penting ketika terjadi error pada sebuah jaringan atau network. Ketika ICMP mendeteksi terjadinya error, maka router atau perangkat keras dalam jaringan lainnya akan mengirimkan notiﬁkasi kepada ICMP, seperti host tidak dijangkau, atau koneksi
+                    terputus.<br><br>
+
+                    ➔	Menyediakan pengendalian error dan pengendalian arus pada lapisan jaringan<br>
+                    ICMP selain melakukan error handling, juga memiliki fungsi lain, yaitu melakukan pengendalian terhadap transmisi data dalam lapisan jaringan komputer.<br><br>
+
+                    ICMP memiliki beberapa tipe pesan yang bisa dideteksi dari protokol ini, yaitu:<br>
+                    1.	ICMP Error Message<br>
+                    Error message yang akan dikirimkan ketika terjadi error dalam jaringan, tipe pesan ini juga dibagi lagi menjadi beberapa jenis pesan, seperti
+                    berikut:<br><br>
+                    a.	Destination Unreachable : Error ini terjadi ketika transmisi data mengalami kegagalan atau error yang disebabkan oleh beberapa faktor seperti terputusnya koneksi secara ﬁsik maupun logic yang disampaikan melalui perangkat router.<br>
+                    b.	Time Exceeded : Pesan ini muncul ketika paket data yang ditransmisikan ketika TTL pada IP sudah tidak ada namun data belum sampai pada tujuannya tersebut, pesan yang ditampilkan seperti request time out.<br>
+                    c.	Parameter problem : Terjadi jika ada kesalahan pada header pada data yang ditransmisikan.<br>
+                    d.	Source Quench : Pesan yang muncul jika terjadi kesalahan atau
+                    gangguan yang terjadi pada router tujuan, yang menyebabkan data yang ditransmisikan menjadi lambat.
+                    2.	ICMP Query Message<br>
+                    Pesan ini tidak ada hubungannya dengan error message, sehingga pesan yang dikirimkan hanya merupakan pesan pembalasan saja.<br><br>
+
+                    b.	POP3<br>
+                    POP3 atau singkatan dari Post Oﬃce Protocol Versi 3, adalah sebuah protokol email yang biasa digunakan untuk mengambil data dari server email.<br>
+                    Penggunaan POP3 ini ditujukan sebagai wadah atau menampung email sementara hingga email tersebut di download atau diakses oleh si penerima di perangkat komputer atau mobile.<br><br>
+
+                    Skema POP3 mengharuskan untuk mendownload email secara otomatis.<br>
+                    Sehingga pengguna dapat mengakses email kapanpun dan dimanapun tanpa koneksi internet.<br>
+                    Berbeda dengan SMTP, yang memiliki fungsi hampir sama dengan POP3.<br>
+                    POP3 memungkinkan untuk menerima email dan menyimpan email tersebut dalam email server hingga ada penerima yang mengakses email tersebut.<br>
+                    Sedangkan SMTP yang hanya mengirimkan email ke dalam web server.<br>
+
+         
                   </p>
                   <!-- <div class="white-button">
                     <a href="#">Read More</a>
@@ -99,14 +138,28 @@
                 </div>
               </div>
             </div>
-          </div>
+
           <div class="right-image-post">
             <div class="row">
               <div class="col-md-6">
                 <div class="left-text">
-                  <h4>Musik</h4>
+                  <h4>STMP</h4>
                   <p>
-                    Musik adalah suara yang disusun sedemikian rupa sehingga mengandung irama, lagu, nada, dan keharmonisan terutama dari suara yang dihasilkan dari alat-alat yang dapat menghasilkan irama. Musik termasuk sejenis fenomena intuisi, untuk mencipta, memperbaiki, dan mempersembahkannya adalah suatu bentuk seni.
+                    SMTP merupakan singkatan dari Simple Mail Transfer Protocol, yang merupakan salah satu dari protokol jaringan yang berguna untuk mengirimkan email dari lokal email ke server, sebelum dikirimkan ke email penerima. <br>
+                    Selain itu, SMTP berfungsi sebagai pengontrol data yang ditransmisikan melalui TCP (Transfer Control Protocol). Dalam lapisan layer OSI SMTP<br><br>
+                     
+                    termasuk ke dalam layer aplikasi (Application Layer) yang dimanfaatkan oleh para pengguna untuk menentukan sumber daya pada jaringan, melakukan identiﬁkasi terhadap partner komunikasi, dan juga untuk melakukan sinkronisasi komunikasi.<br><br>
+                    
+                    Fungsi SMTP:<br>
+                    Fungsi SMTP ini pada dasarnya berfungsi untuk mengirimkan pesan elektronik atau email melalui jaringan komputer. Pengguna yang akan mendapatkan<br>
+                    kiriman pesan tersebut adalah mereka yang menggunakan alamat IP pada TCP dengan port 25 yang mana didalamnya juga menggunakan mesin antar<br>
+                    host. Host yang digunakan tersebut yaitu MUA atau USer Agent dan juga MTA atau Mail Transfer Agent.<br><br>
+                    
+                    Kemudian, email yang sudah dikirim tersebut akan diterima oleh POP3 maupun IMAP. Selanjutnya POP3 atau Post Oﬃce Protocol 3 akan mengunduh dan lalu menyimpan email tersebut melalui data server yang ada di SMTP dengan memanfaatkan TCP pada port 10. POP3 akan mengunduh pesan seluruhnya tanpa harus memilih atau melakukan tindakan selektif.<br>
+                    
+                    Setelah seluruh pesan di download, maka klien POP3 bisa langsung memutus koneksi dan langsung bisa memindahkan seluruh data yang sudah didownload tersebut.<br>
+                    
+                    
                   </p>
                   <!-- <div class="white-button">
                     <a href="#">Read More</a>
@@ -114,16 +167,122 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/right-image.jpg" alt="" />
+                <div class="right-image-lan">
+                  <!-- <img src="assets/images/bridge.jpg" alt="" /> -->
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
+        <div class="left-image-post-tambahan">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left-image-lan">
+                <!-- <img src="assets/images/NIC.jpg" alt="" /> -->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-text">
+                <h4>FTP</h4>
+                <p>
+                    File Transfer Protocol atau FTP adalah protokol internet yang bertujuan untuk mentransfer atau mengirimkan berkas sebagai standar komunikasi antar jaringan komputer. Selain itu, FTP juga memiliki hubungan erat dengan Telnet, yang dimana telnet dapat melakukan komunikasi secara redirect atau langsung sementara FTP melakukan komunikasi secara tidak langsung. <br>
+                    Terdapat dua jenis TCP/IP koneksi dan menjadi dua model utama yang<br><br>
+                     
+                    dikenalkan. Koneksi yang tidak langsung memakai sumber daya dari remote-host pada sistem lokal.<br><br>
+                    Fungsi dan kegunaan FTP:<br>
+                    FTP memiliki beberapa fungsi yang diandalkan banyak orang, salah satunya dipakai untuk mengunggah halaman web atau website ke dalam internet,<br>
+                    proses pengunggahan halaman website ini dilakukan melalui web hosting.<br>
+                    Lalu, FTP juga dapat dipakai untuk memperbarui revisi program pada aplikasi FTP, lebih dari itu berikut ini beberapa kegunaan dari FTP.<br><br>
+                    
+                    ●	Melakukan proses upload halaman website ke internet melalui web server atau web hosting.<br>
+                    ●	Mampu digunakan untuk menjelajah dan mengunduh ﬁle dari sebuah situs.<br>
+                    ●	Mampu digunakan untuk mengirim ﬁle dengan ukuran besar, jika terlalu besar dapat dibagi menjadi dua partisi untuk lampiran di email.<br>
+                    ●	Melakukan pengunduhan dan upload konten, misalnya seperti tugas kantor dan kuliah ke server FTP.<br>
+                    ●	Melakukan pendistribusian revisi program, biasanya dilakukan oleh pengembang perangkat lunak.<br>
+                             
+                </p>
+                <!-- <div class="white-button">
+                  <a href="#">Read More</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-image-post">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="left-text">
+                <h4>ARP</h4>
+                <p>
+                    ARP singkatan dari Address Resolution Protocol, adalah protokol jaringan dalam TCP/IP yang berperan dalam resolusi alamat IP ke dalam Media Access control atau MAC Address suatu Host yang terhubung kedalam jaringan. <br>
+                    Alamat IP yang dimiliki oleh host yang dituju akan diterjemahkan dahulu ke dalam MAC Address agar frame-frame data dapat diteruskan ke tujuan dan diletakkan di atas media transmisi (kabel, radio, atau cahaya), setelah diproses terlebih dahulu oleh Network Interface Card (NIC). Hal ini dikarenakan NIC<br>
+                    beroperasi dalam lapisan ﬁsik dan lapisan data-link pada tujuh layer OSI dan menggunakan alamat ﬁsik daripada menggunakan alamat logis (seperti halnya alamat IP) untuk melakukan dapat melakukan komunikasi didalam jaringan internet.<br><br>
+                    
+                    Fungsi serta peran dari Protokol ARP:<br>
+                    a.	Peran protokol ARP ini sangat penting dalam jaringan, terutama mengenai komunikasi data yang terjadi dalam jaringan. Setiap host yang tergabung atau terhubung dalam sebuah jaringan LAN saling berkomunikasi menggunakan alamat ﬁsik (Mac Address) dan tidak menggunakan alamat logis (IP Address).<br>
+                    b.	Dikatakan pada poin nomor satu, bahwa setiap Host berkomunikasi menggunakan alamat ﬁsik (Mac Address). Jadi, mau tidak mau setiap sebuah Host yang ingin berkomunikasi dengan Host lain harus mengetahui Mac Address yang dimiliki oleh Host tujuannya tersebut.<br>
+                    c.	Lalu bagaimana sebuah Host bisa mendapatkan informasi mengenai Mac Address dari Host tujuannya? Jawabannya adalah pada tahapan transfer data. Sebelum sebuah data diberikan Mac address, terlebih dahulu data<br>
+                    tersebut diberi alamat logis berupa IP Address. IP address yang ditambahkan ini merupakan IP address dari Host pengirim dan Host penerima.<br>
+                    d.	Baru kemudian menentukan alamat ﬁsik atau Mac Address dari Host<br>
+                    tujuan. Nah, apabila belum diketahui alamat ﬁsiknya, mau tidak mau harus dicari terlebih dahulu. Disinilah peran protokol ARP, dengan memanfaatkan informasi IP address Host tujuan yang ada, maka Host pengirim melakukan pencarian dengan menugaskan Protokol ARP.<br>
+
+                    2. Berikan penjelasan mengenai kelebihan dan kekurangan Ipv4 dan Ipv6? <br><br>
+a.	Kelebihan dan Kekurangan IPv4<br>
+➔	Kelebihan IPv4:<br><br>
+ 
+-	Tidak mensyaratkan ukuran paket pada link layer dan harus bisa menyusun kembali paket berukuran 576 byte.<br>
+-	Pengelolaan rute informasi yang tidak memerlukan seluruh 32 bit tersebut, melainkan cukup hanya bagian jaringannya saja, sehingga besar informasi rute yang disimpan di router, menjadi kecil. Setelah address jaringan diperoleh, maka organisasi<br>
+tersebut dapat secara bebas memberikan address bagian host pada masing-masing hostnya.<br><br>
+
+
+➔	Kekurangan IPv4:<br>
+-	Panjang alamat 32 bit (4 bytes)<br>
+-	Dikonﬁgurasi secara manual atau DHCP IPv4.<br>
+-	Dukungan terhadap IPSec opsional.<br>
+-	Fragmentasi dilakukan oleh pengirim dan pada router, menurunkan kinerja router.<br>
+-	IPv4 yang hanya memiliki panjang 32-bit (jumlah total alamat yang dapat dicapainya mencapai 4,294,967,296 alamat). IPv4, meskipun total alamatnya mencapai 4 miliar, pada
+kenyataannya tidak sampai 4 miliar alamat, karena ada
+beberapa limitasi, sehingga implementasinya saat ini hanya mencapai beberapa ratus juta saja.<br><br>
+
+
+b.	Kelebihan dan Kekurangan IPv6<br>
+➔	Kelebihan IPv6:<br>
+-	Lebih Cepat, tak bergantung dengan NAT (Network-Address Translation). Hal ini membuat proses transfer data bisa lebih cepat.<br>
+-	Lebih Efektif, memiliki ukuran routing table lebih sedikit dari<br>
+IPv4. Ini membuat proses routing lebih tersusun rapi dan efektif<br><br>
+ 
+-	Lebih Aman, dibekali kemampuan enkripsi untuk membuat proses pertukaran data lebih aman. Lalu, juga lebih siap menangkal serangan ke ARP (Address Resolution Protocol) yang bisa mengalihkan traﬁk dan memanipulasinya.<br>
+-	Bandwidth Lebih Hemat, mendukung multicast sehingga membuat penggunaan bandwidth lebih hemat. Sebab,
+pertukaran data yang rakus bandwidth bisa dikirim ke berbagai tujuan secara bersamaan.<br>
+-	Konﬁgurasi Lebih Mudah, Konﬁgurasi IP address berjalan secara otomatis sehingga jauh lebih mudah dan praktis.<br>
+-	Lebih Cocok untuk Mobile, Koneksi pada perangkat mobile bisa lebih cepat. Sebab, koneksinya tak perlu melewati NAT yang akan memakan waktu.<br><br>
+
+
+➔	Kekurangan IPv6:<br>
+-	Kompatibilitas belum optimal, kebanyakan perangkat yang mengakses internet masih menggunakan IPv4. Jadi, dukungan infrastruktur dan jaringan IPv6 belum menyeluruh.<br>
+-	Tren peralihan yang lambat, walaupun sudah dikenalkan sejak 1995, penggunaan IPv6 baru mencapai 35% saja di dunia.<br>
+
+                </p>
+                <!-- <div class="white-button">
+                  <a href="#">Read More</a>
+                </div> -->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-image-lan">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+           
       </section>
 
-      <section class="section my-services" data-section="section2">
+      <!-- <section class="section my-services" data-section="section2">
         <div class="container">
           <div class="section-heading">
             <h2>What I’m good at?</h2>
@@ -172,9 +331,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section my-work" data-section="section3">
+      <!-- <section class="section my-work" data-section="section3">
         <div class="container">
           <div class="section-heading">
             <h2>My Work</h2>
@@ -195,7 +354,7 @@
                     name="isotope-filter"
                   />
                   <span>all</span></label
-                >
+                > -->
                 <!-- <label
                   ><input
                     type="radio"
@@ -220,65 +379,46 @@
                   />
                   <span>Full Website</span></label
                 > -->
-              </form>
-              <div class="isotope-item" id="pertemuan11" data-type="creation">
-                <figure class="snip1321">
-                  <img
-                    src="assets/images/UBSI.png"
-                    alt="sq-sample26"
-                  />
-                  <figcaption>
-                    <a
-                      href="pertemuan1.html"
-                      data-title="Caption"
-                      ><i class="fa fa-search"></i
-                    ></a>
-                    <h4>Tugas Pertemuan 1</h4>
-                    <span> jenis-jenis jaringan komputer</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-                  
-                <div class="isotope-box mr-6">
-                  <div class="isotope-item" data-type="landing">
-                    <figure class="snip1321">
-                      <img
-                        src="assets/images/UBSI.png"
-                        alt="sq-sample26"
-                      />
-                      <figcaption>
-                        <a
-                          href="pertemuan3.html"
-                          data-title="Caption"
-                          ><i class="fa fa-laptop"></i
-                        ></a>
-                        <h4>Tugas Pertemuan 3</h4>
-                        <span>Perangkat jaringan Komputer</span>
-                      </figcaption>
-                    </figure>
-                  </div>
-
-                  
-                <div class="isotope-item" id="pertemuan11" data-type="creation">
+              <!-- </form>
+              <div class="isotope-box">
+                <div class="isotope-item" data-type="landing">
                   <figure class="snip1321">
                     <img
-                      src="assets/images/UBSI.png"
+                      src="assets/images/uigreen.png"
                       alt="sq-sample26"
                     />
                     <figcaption>
                       <a
-                        href="pertemuan11.html"
+                        href="pertemuan1.html"
+                        data-title="Caption"
+                        ><i class="fa fa-laptop"></i
+                      ></a>
+                      <h4>Tugas Pertemuan 1</h4>
+                      <span>Buat resume untuk jenis-jenis jaringan komputer</span>
+                    </figcaption>
+                  </figure>
+                </div> -->
+
+                <!-- <div class="isotope-item" data-type="creation">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/vcard.png"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/vcard.png"
+                        data-lightbox="image-1"
                         data-title="Caption"
                         ><i class="fa fa-search"></i
                       ></a>
-                      <h4>Tugas Pertemuan 11</h4>
-                      <span>Protokol jaringan Komputer</span>
+                      <h4>VCard By Azhar</h4>
+                      <span>Sebagai tanda pengenal secara online.</span>
                     </figcaption>
                   </figure>
                 </div>
 
-                <!-- <div class="isotope-item" data-type="creation">
+                <div class="isotope-item" data-type="creation">
                   <figure class="snip1321">
                     <img
                       src="assets/images/uipaint.png"
@@ -433,7 +573,7 @@
             </div>
           </div>
         </div>
-      </section>  -->
+      </section> -->
 <!-- 
       <section class="section contact-me" data-section="section4">
         <div class="container">
